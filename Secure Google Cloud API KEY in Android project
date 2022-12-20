@@ -4,3 +4,7 @@ step 2 -> create variable with key in local.properties
 step 3 -> get local.properties stream in gradle.build( app ) file then get GOOGLE_API_KEY property and store this in buildConfig
         code for storing google key in buildConfig 
   
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+        buildConfigField "String", "GOOGLEKEYY", "\"${properties.getProperty("GOOGLEKEYY")}\""
