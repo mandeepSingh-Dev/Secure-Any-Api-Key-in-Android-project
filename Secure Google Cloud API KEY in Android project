@@ -1,0 +1,6 @@
+Step 1 -> First check local.properties is written available in gitignore.
+step 2 -> create variable with key in local.properties 
+           like this - GOOGLE_API_KEY = kfhdbdfidnqu1h92hfbe3fhJaYe
+step 3 -> get local.properties stream in gradle.build( app ) file then get GOOGLE_API_KEY property and store this in buildConfig
+        code for storing google key in buildConfig 
+  
